@@ -22,7 +22,6 @@ class Character extends React.Component {
       items: {},
     };
   }
-
   componentDidMount() {
     fetch(this.props.url)
       .then(res => res.json())
