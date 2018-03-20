@@ -32,6 +32,7 @@
     "react-dom": "^16.2.0",
     "react-images": "^0.5.17",
     "react-photo-gallery": "^6.0.22",
+    "react-social-icons": "^2.8.1",
     "sequelize": "^4.28.6",
     "serialize-javascript": "^1.3.0",
     "source-map-support": "^0.5.0",

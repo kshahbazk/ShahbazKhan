@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
+import { SocialIcons } from 'react-social-icons';
 import s from './Home.css';
 
 const PHOTO_SET = [
@@ -106,10 +107,17 @@ class Home extends React.Component {
     });
   }
   render() {
+    const urls = [
+      'https://www.facebook.com/shahbaz.khan.5473894',
+      'https://twitter.com/royalfalcon007',
+      'https://www.linkedin.com/in/kshahbazk/',
+      'https://www.instagram.com/royalfalcon37/',
+    ];
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1>{this.props.title}</h1>
+          <p className={s.sayings}>{this.props.title}</p>
+          <SocialIcons className={s.socialButtons} urls={urls} />
           <Gallery photos={PHOTO_SET} onClick={this.openLightbox} />
           <Lightbox
             images={PHOTO_SET}

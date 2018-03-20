@@ -26,19 +26,19 @@
 }
 
 .link:hover {
-  color: rgba(255, 255, 255, 1);
+  color: #e7d28a;
 }
 
 .highlight {
   margin-right: 8px;
   margin-left: 8px;
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.15);
-  color: #fff;
+  background: #0f1621;
+  color: #0f1621;
 }
 
 .highlight:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: #0f1621;
 }
 
 .spacer {

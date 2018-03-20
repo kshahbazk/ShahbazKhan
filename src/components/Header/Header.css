@@ -14,8 +14,9 @@
 }
 
 .root {
-  background: #373277;
+  background: #0f1621;
   color: #fff;
+  min-height: 225px;
 }
 
 .container {
@@ -25,13 +26,8 @@
 }
 
 .brand {
-  color: color(var(--brand-color) lightness(+10%));
   text-decoration: none;
   font-size: 1.75em; /* ~28px */
-}
-
-.brandTxt {
-  margin-left: 10px;
 }
 
 .banner {
@@ -40,6 +36,7 @@
 
 .bannerTitle {
   margin: 0;
+  color: #e7d28a;
   padding: 10px;
   font-weight: normal;
   font-size: 4em;
@@ -48,7 +45,7 @@
 
 .bannerDesc {
   padding: 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: #f5f5f5;
   font-size: 1.25em;
   margin: 0;
 }
