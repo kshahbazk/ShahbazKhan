@@ -8,18 +8,22 @@
  */
 
 import React from 'react';
+import Marvel from './Marvel';
 import Layout from '../../components/Layout';
-import Contact from './Contact';
 
-const title = 'Contact Us';
-
-function action() {
+async function action({ fetch }) {
+  const resp = await fetch('/graphql', {
+    body: JSON.stringify({
+      query: '{marvel{id,name,description,thumbnail {path,extension,}}}',
+    }),
+  });
+  const { data } = await resp.json();
+  if (!data || !data.marvel) throw new Error('Failed to load the news feed.');
   return {
-    chunks: ['contact'],
-    title,
+    title: 'Marvel Character Guide',
     component: (
       <Layout>
-        <Contact title={title} />
+        <Marvel marvel={data.marvel} />
       </Layout>
     ),
   };

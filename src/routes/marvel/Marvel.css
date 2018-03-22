@@ -1,0 +1,58 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+}
+
+.characterBlock {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  flex-direction: row;
+  width: inherit;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: flex-start space-between;
+  list-style-type: none;
+}
+
+.characterTitle {
+  font-size: 1.5rem;
+  width: 250px;
+}
+
+.characterDesc {
+  font-size: 1rem;
+  display: none;
+}
+
+.marvelImage {
+  border-radius: 150px;
+  border-style: solid;
+  border-width: medium;
+  box-shadow: 5px 10px 18px #888;
+}
+
+.marvelImage:hover {
+  opacity: 0.2;
+}
+
+.characterContainer {
+  text-align: center;
+}

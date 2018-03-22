@@ -22,8 +22,8 @@ const routes = {
       load: () => import(/* webpackMode: 'eager' */ './home'),
     },
     {
-      path: '/contact',
-      load: () => import(/* webpackChunkName: 'contact' */ './contact'),
+      path: '/marvel',
+      load: () => import(/* webpackChunkName: 'contact' */ './marvel'),
     },
     {
       path: '/ghiblifilms',

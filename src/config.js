@@ -8,6 +8,7 @@
  */
 
 /* eslint-disable max-len */
+require('dotenv').config();
 
 if (process.env.BROWSER) {
   throw new Error(
@@ -66,6 +67,13 @@ module.exports = {
       secret:
         process.env.TWITTER_CONSUMER_SECRET ||
         'KTZ6cxoKnEakQCeSpZlaUCJWGAlTEBJj0y2EMkUBujA7zWSvaQ',
+    },
+
+    marvel: {
+      key: process.env.MARVEL_API_KEY || 'bc1167a73d61a3294d88697b86c3bf1e',
+      secret:
+        process.env.MARVEL_PRIVATE_KEY ||
+        '346357d6e8b4c3c27771b4f0fb29322302dc9a5c',
     },
   },
 };
